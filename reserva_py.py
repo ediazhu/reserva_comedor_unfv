@@ -5,5 +5,5 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def hello():
+def reserva_py():
     return 'App para el Comedor Universitario UNFV'
