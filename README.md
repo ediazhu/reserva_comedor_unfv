@@ -31,3 +31,9 @@ Luego para desplegar en web te recomiendo alguna SAAS que te permita correr Pyth
 3. Puedes reservar a un compañero/a con el mismo programa.
 4. Los cupos son limitados y a nadie le gusta hacer cola para la carroña.
 >>>>>>> 8d2e265 (aaaa)
+
+# FAQ
+## Se puede utilizar para otros comedores de otras  facultades?
+- No. Solo es para el comedor de Medicina-Tecnologia Médica.
+- Sin embargo puedes clonar el repositorio y editarlo con tu propio link de tu comedor.
+- Para ello revisa el link que se genera al reservar DE TU COMEDOR.
