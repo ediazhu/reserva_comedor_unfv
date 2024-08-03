@@ -1,9 +1,8 @@
+import cherrypy
 
-from flask import Flask
+class HelloWorld(object):
+    @cherrypy.expose
+    def index(self):
+        return "Hello World!"
 
-app = Flask(__name__)
-
-
-@app.route('/')
-def reserva_py():
-    return 'App para el Comedor Universitario UNFV'
+cherrypy.quickstart(HelloWorld())
