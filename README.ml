@@ -1,7 +1,7 @@
 
-#Aplicacion para reservar el comedor sin necesidad de loguearte##
+# Aplicacion para reservar el comedor sin necesidad de loguearte##
 
-Objetivos de la aplicación.
+## Objetivos de la aplicación.
 
 1. Saltarse el tedioso login al sistema
 2. Puedes reservar el almuerzo sin sufrir el problema de conectividad por cuello de botella.
