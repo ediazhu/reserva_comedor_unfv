@@ -1,4 +1,3 @@
-
 # Aplicacion para reservar el comedor sin necesidad de loguearte##
 
 ## Objetivos de la aplicación.
