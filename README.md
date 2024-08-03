@@ -7,6 +7,11 @@
 3. Puedes reservar a un compañero/a con el mismo programa.
 4. Los cupos son limitados y a nadie le gusta hacer cola para la carroña.
 
+## Como correr el programa?
+
+El programa está hecho en Python con framework CherryPy. Debes tener instaladas las librerias necesarias que encontrarás en el archivo py.
+Luego para desplegar en web te recomiendo alguna SAAS que te permita correr Python y listo.
+
 ## ¿Puedo utilizar el codigo para otra sede/facultad?
 
 - **NO. Este codigo solo sirve para el comedor de MEDICINA HUMANA / TECNOLOGIA MEDICA**
