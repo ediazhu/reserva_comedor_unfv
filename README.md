@@ -1,4 +1,5 @@
 # Aplicacion para reservar el comedor sin necesidad de loguearte
+<<<<<<< HEAD
 
 ## Objetivos de la aplicación.
 
@@ -22,3 +23,11 @@ Luego para desplegar en web te recomiendo alguna SAAS que te permita correr Pyth
 ## Que estudio?
 
 - Radiologia. Pero me gusta la programación.
+=======
+## Objetivos de la aplicación.
+
+1. Saltarse el tedioso login al sistema
+2. Puedes reservar el almuerzo sin sufrir el problema de conectividad por cuello de botella.
+3. Puedes reservar a un compañero/a con el mismo programa.
+4. Los cupos son limitados y a nadie le gusta hacer cola para la carroña.
+>>>>>>> 8d2e265 (aaaa)
