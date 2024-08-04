@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de turnos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Reserva de turnos</h1>
+    <form id="formulario">
+        <label for="numero">Ingrese su número:</label>
+        <input type="text" id="numero" name="numero">
+        <button id="boton1">Reservar en el 1er turno</button>
+        <button id="boton2">Reservar en el 2do turno</button>
+    </form>
+    <div id="resultado"></div>
+
+    <script>
+        const formulario = document.getElementById('formulario');
+        const numeroInput = document.getElementById('numero');
+        const boton1 = document.getElementById('boton1');
+        const boton2 = document.getElementById('boton2');
+        const resultadoDiv = document.getElementById('resultado');
+
+        boton1.addEventListener('click', (e) => {
+            e.preventDefault();
+            const numero = numeroInput.value.trim();
+            if (numero !== '') {
+                const link = `https://example.com/turno1/${numero}`;
+                resultadoDiv.innerHTML = `<a href="${link}" target="_blank">Link de reserva para el 1er turno</a>`;
+            } else {
+                alert('Por favor, ingrese un número');
+            }
+        });
+
+        boton2.addEventListener('click', (e) => {
+            e.preventDefault();
+            const numero = numeroInput.value.trim();
+            if (numero !== '') {
+                const link = `https://example.com/turno2/${numero}`;
+                resultadoDiv.innerHTML = `<a href="${link}" target="_blank">Link de reserva para el 2do turno</a>`;
+            } else {
+                alert('Por favor, ingrese un número');
+            }
+        });
+    </script>
+</body>
+</html>
