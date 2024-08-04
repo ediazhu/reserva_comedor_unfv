@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reserva de Turnos RAD UNFV</title>
+    <title>Reserva de turnos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Reserva de Comedor</h1>
+    <h1>Reserva de turnos</h1>
     <form id="formulario">
-        <label for="numero">Ingrese su Código de Estudiante:</label>
+        <label for="numero">Ingrese su número:</label>
         <input type="text" id="numero" name="numero">
         <button id="boton1">Reservar en el 1er turno</button>
         <button id="boton2">Reservar en el 2do turno</button>
     </form>
+    <p>Importante: Reservar a partir de las 11:01 AM. <span id="hora-local"></span></p>
+    <a href="como-funciona.html" target="_blank">¿Cómo funciona esto?</a>
     <div id="resultado"></div>
 
     <script>
@@ -22,6 +24,12 @@
         const boton1 = document.getElementById('boton1');
         const boton2 = document.getElementById('boton2');
         const resultadoDiv = document.getElementById('resultado');
+        const horaLocalSpan = document.getElementById('hora-local');
+
+        // Obtener la hora local en formato GMT-5
+        const fecha = new Date();
+        const horaLocal = fecha.toLocaleTimeString('es-ES', { timeZone: 'America/Bogota' });
+        horaLocalSpan.textContent = `Hora Local: ${horaLocal}`;
 
         boton1.addEventListener('click', (e) => {
             e.preventDefault();

@@ -49,3 +49,9 @@ body {
 #resultado a:hover {
     color: #23527c;
 }
+
+#hora-local {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+}
