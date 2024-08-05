@@ -35,7 +35,7 @@
             e.preventDefault();
             const numero = numeroInput.value.trim();
             if (numero !== '') {
-                const link = `https://example.com/turno1/${numero}`;
+                const link = `https://intranet.unfv.edu.pe/ocbu/reserva_alumnos/Reserva/ConfirmarReserva?p1=169&p2=1331&p3=${numero}&p4=CAFETERIA%20SL10&p5=12%3A00%3A00&p6=13%3A15%3A00`;
                 resultadoDiv.innerHTML = `<a href="${link}" target="_blank">Link de reserva para el 1er turno</a>`;
             } else {
                 alert('Por favor, ingrese un código');
