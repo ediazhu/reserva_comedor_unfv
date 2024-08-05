@@ -1,6 +1,6 @@
 # Aplicacion para reservar el comedor sin necesidad de loguearte
 
-## Objetivos de la aplicación.
+## Objetivos de la aplicación. 
 
 1. Saltarse el tedioso login al sistema
 2. Puedes reservar el almuerzo sin sufrir el problema de conectividad por tráfico.
@@ -13,7 +13,7 @@
 - **NO. Este codigo solo sirve para el comedor de MEDICINA HUMANA / TECNOLOGIA MEDICA**
 - Sin embargo, *puedes clonar el repositorio* y editar el link que está dentro del codigo y adaptarlo a tu comedor.
 - Para ello revisa el codigo que se genera al reservar de TU COMEDOR. Y luego lo adaptas.
-- No sabria si todos los comedores  usan el mismo sistema. Al parecer SI.
+- No sabria si todos los comedores  usan el mismo sistema. Al parecer SI, pero con diferentes horarios.
 
 ## Que estudio?
 
