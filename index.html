@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reserva de Comedor v. 0.6b</title>
+    <title>Reserva de Comedor v. 0.9RC</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -46,7 +46,7 @@
             e.preventDefault();
             const numero = numeroInput.value.trim();
             if (numero !== '') {
-                const link = `https://example.com/turno2/${numero}`;
+                const link = `https://web4.unfv.edu.pe/ocbu/reserva_alumnos/Reserva/ConfirmarReserva?p1=169&p2=1332&p3=${numero}&p4=CAFETERIA%20SL10&p5=13%3A30%3A00&p6=14%3A45%3A00`;
                 resultadoDiv.innerHTML = `<a href="${link}" target="_blank">Link de reserva para el 2do turno</a>`;
             } else {
                 alert('Por favor, ingrese un código');
