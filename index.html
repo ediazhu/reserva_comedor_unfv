@@ -12,8 +12,7 @@
         <label for="numero">Ingrese su código:</label>
         <input type="text" id="numero" name="numero">
         <button id="boton1">Reservar en el 1er turno</button>
-        <button id="botonsinfuncionar">2do turno (NO FUNCIONA)</button>
-        <button id="boton2">Reservar en el 3er turno</button>
+        <button id="boton2">Reservar en el 2do turno</button>
     </form>
     <p><b>Importante:</b> Reservar a partir de las 9:31 AM. <span id="hora-local"></span></p>
     <a href="como-funciona.html" target="_blank">¿Cómo funciona esto? - Historial de Versiones</a>
@@ -48,8 +47,8 @@
             e.preventDefault();
             const numero = numeroInput.value.trim();
             if (numero !== '') {
-                const link = `https://web4.unfv.edu.pe/ocbu/reserva_alumnos/Reserva/ConfirmarReserva?p1=190&p2=1371&p3=${numero}&p4=CAFETERIA%20SL10&p5=13%3A46%3A00&p6=14%3A20%3A00`;
-                resultadoDiv.innerHTML = `<a href="${link}" target="_blank">Link de reserva para el 3er turno</a>`;
+                const link = `https://web4.unfv.edu.pe/ocbu/reserva_alumnos/Reserva/ConfirmarReserva?p1=190&p2=1370&p3=${numero}&p4=CAFETERIA%20SL10&p5=13%3A31%3A00&p6=14%3A45%3A00`;
+                resultadoDiv.innerHTML = `<a href="${link}" target="_blank">Link de reserva para el 2d0 turno</a>`;
             } else {
                 alert('Por favor, ingrese un código');
             }
