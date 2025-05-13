@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Reserva de Comedor UNFV - SL 10 Radiologia</h1>
+    <h1>Reserva de Comedor UNFV - Radiologia</h1>
     <form id="formulario">
         <label for="numero">Ingrese su código:</label>
         <input type="text" id="numero" name="numero">
         <button id="boton1">Reservar en el 1er turno</button>
-        <button id="boton2">Reservar en el 2do turno</button>
+        <button id="botonsinfuncionar">2do turno (NO FUNCIONA)</button>
+        <button id="boton2">Reservar en el 3er turno</button>
     </form>
     <p><b>Importante:</b> Reservar a partir de las 11:01 AM. <span id="hora-local"></span></p>
     <a href="como-funciona.html" target="_blank">¿Cómo funciona esto? - Historial de Versiones</a>
@@ -30,12 +31,13 @@
         const fecha = new Date();
         const horaLocal = fecha.toLocaleTimeString('es-ES', { timeZone: 'America/Bogota' });
         horaLocalSpan.textContent = `Hora Local: ${horaLocal}`;
-
+        // https://web4.unfv.edu.pe/ocbu/reserva_alumnos/Reserva/ConfirmarReserva?p1=190&p2=1369&p3=${numero}&p4=CAFETERIA%20SL10&p5=12%3A00%3A00&p6=13%3A00%3A00
+        // https://web4.unfv.edu.pe/ocbu/reserva_alumnos/Reserva/ConfirmarReserva?p1=190&p2=1371&p3=${numero}&p4=CAFETERIA%20SL10&p5=13%3A46%3A00&p6=14%3A20%3A00
         boton1.addEventListener('click', (e) => {
             e.preventDefault();
             const numero = numeroInput.value.trim();
             if (numero !== '') {
-                const link = `https://web4.unfv.edu.pe/ocbu/reserva_alumnos/Reserva/ConfirmarReserva?p1=169&p2=1331&p3=${numero}&p4=CAFETERIA%20SL10&p5=12%3A00%3A00&p6=13%3A15%3A00`;
+                const link = `https://web4.unfv.edu.pe/ocbu/reserva_alumnos/Reserva/ConfirmarReserva?p1=190&p2=1369&p3=${numero}&p4=CAFETERIA%20SL10&p5=12%3A00%3A00&p6=13%3A00%3A00`;
                 resultadoDiv.innerHTML = `<a href="${link}" target="_blank">Link de reserva para el 1er turno</a>`;
             } else {
                 alert('Por favor, ingrese un código');
@@ -46,8 +48,8 @@
             e.preventDefault();
             const numero = numeroInput.value.trim();
             if (numero !== '') {
-                const link = `https://web4.unfv.edu.pe/ocbu/reserva_alumnos/Reserva/ConfirmarReserva?p1=169&p2=1332&p3=${numero}&p4=CAFETERIA%20SL10&p5=13%3A30%3A00&p6=14%3A45%3A00`;
-                resultadoDiv.innerHTML = `<a href="${link}" target="_blank">Link de reserva para el 2do turno</a>`;
+                const link = `https://web4.unfv.edu.pe/ocbu/reserva_alumnos/Reserva/ConfirmarReserva?p1=190&p2=1371&p3=${numero}&p4=CAFETERIA%20SL10&p5=13%3A46%3A00&p6=14%3A20%3A00`;
+                resultadoDiv.innerHTML = `<a href="${link}" target="_blank">Link de reserva para el 3er turno</a>`;
             } else {
                 alert('Por favor, ingrese un código');
             }
