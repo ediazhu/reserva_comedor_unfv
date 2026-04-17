@@ -12,6 +12,7 @@ body {
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
     border: 3px solid #ccc; /* Opcional: añade un borde al círculo */
+    margin: 0 auto;
 }
 
 .imagen-rostro {
