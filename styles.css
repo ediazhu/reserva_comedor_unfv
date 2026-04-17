@@ -6,7 +6,7 @@ body {
 .contenedor-circular {
     width: 200px; /* Ajusta el tamaño del círculo aquí */
     height: 200px; /* Misma medida que el ancho */
-    border-radius: 50%; /* Hace el borde circular */
+    border-radius: 75%; /* Hace el borde circular */
     overflow: hidden; /* Recorta la parte de la imagen que sobresale */
     display: flex;
     justify-content: center; /* Centra horizontalmente */
