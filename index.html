@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reserva de Comedor v 3.0RC</title>
+    <title>Reserva de Comedor v 3.0 Final</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
@@ -31,13 +31,13 @@
         const fecha = new Date();
         const horaLocal = fecha.toLocaleTimeString('es-ES', { timeZone: 'America/Bogota' });
         horaLocalSpan.textContent = `Hora Local: ${horaLocal}`;
-        // https://web4.unfv.edu.pe/ocbu/reserva_alumnos/Reserva/ConfirmarReserva?p1=190&p2=1369&p3=2024033076&p4=CAFETERIA%20SL10&p5=12%3A00%3A00&p6=13%3A30%3A00
+        // https://web4.unfv.edu.pe/ocbu/reserva_alumnos/Reserva/ConfirmarReserva?p1=199&p2=1385&p3=2024033076&p4=CAFETERIA%20SL10&p5=12%3A00%3A00&p6=13%3A10%3A00
         // https://web4.unfv.edu.pe/ocbu/reserva_alumnos/Reserva/ConfirmarReserva?p1=199&p2=1386&p3=2024033076&p4=CAFETERIA%20SL10&p5=13%3A10%3A01&p6=14%3A20%3A00
         boton1.addEventListener('click', (e) => {
             e.preventDefault();
             const numero = numeroInput.value.trim();
             if (numero !== '') {
-                const link = `https://web4.unfv.edu.pe/ocbu/reserva_alumnos/Reserva/ConfirmarReserva?p1=190&p2=1369&p3=${numero}&p4=CAFETERIA%20SL10&p5=12%3A00%3A00&p6=13%3A30%3A00`;
+                const link = `https://web4.unfv.edu.pe/ocbu/reserva_alumnos/Reserva/ConfirmarReserva?p1=199&p2=1385&p3=${numero}&p4=CAFETERIA%20SL10&p5=12%3A00%3A00&p6=13%3A10%3A00`;
                 resultadoDiv.innerHTML = `<a href="${link}" target="_blank">LINK DE RESERVA PARA EL PRIMER TURNO</a>`;
             } else {
                 alert('Por favor, ingrese un código');
